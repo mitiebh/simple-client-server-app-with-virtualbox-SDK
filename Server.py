@@ -10,7 +10,7 @@ progress.wait_for_completion()
 
 host_session = machine.create_session()
 guest_session = host_session.console.guest.create_session("YOUR_USERNAME” ,"YOUR_PASS”)
-process = guest_session.process_create("/user/bin/terminal.sh ," ['/c ‘,'python client.py'], [], [ProcessCreateFlag(1)],0)
+process = guest_session.process_create("/user/bin/terminal.sh ," ['/c ‘,'python Client.py'], [], [ProcessCreateFlag(1)],0)
                                                                   
 server_name = 'YOUR_IP_ADRESS’
 sever_port = YOUR_PORT_NUMBER

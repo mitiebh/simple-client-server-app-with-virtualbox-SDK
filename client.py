@@ -12,4 +12,4 @@ while True:
     Response_message= 'How are you?’
     connection_socket.send(Response_message.encode(“utf-8”)
   connection_socket.close()
-  Break
+  Break 

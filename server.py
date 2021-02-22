@@ -1,14 +1,15 @@
 import virtualbox
 from virtualbox.library import ProcessCreateFlag
 from socket import *
+
 vbox = virtualbox.VirtualBox()
 session = virtualbox.Session()
-machine = vbox.find_machine(“ubuntu19.04”)
+machine = vbox.find_machine(“YOUR_VIRTUAL_OS_NAME”)
 progress = machine.launch_vm_process(session, "gui", [])
 progress.wait_for_completion()
 
 host_session = machine.create_session()
-guest_session = host_session.console.guest.create_session("mitiebh” ,"123456m”)
+guest_session = host_session.console.guest.create_session("YOUR_USERNAME” ,"YOUR_PASS”)
 process = guest_session.process_create("/user/bin/terminal.sh ," ['/c ‘,'python client.py'], [], [ProcessCreateFlag(1)],0)
                                                                   
 server_name = 'YOUR_IP_ADRESS’

@@ -20,4 +20,4 @@ send_message = 'Hello Guest'
 client_socket.send(send_message.encode(“utf-8”)
 response_message = client_socket.recv(1024)
 print("Host's Response:\n" + response_message.decode(“utf-8”))
-client_socket.close()
+client_socket.close() 

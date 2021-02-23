@@ -8,7 +8,7 @@ The Main API is made available to C++ clients through COM on Windows hosts or XP
 Here you will find [links](https://www.virtualbox.org/wiki/Downloads) to VirtualBox binaries, SDK and its source code. 
 ### Configuration
 After Download and install the pakage, you can follow these steps to config the virtualbox sdk and it's libraries.<br>
-1. First in package directory, go to the installer folder and open your command-line, then type the `python vboxapisetup.py install` command.<br>
+1. First in package directory, go to the installer folder and open your command-line, then type the `python vboxapisetup.py install` command.
 Note : this command is for install all the virtualbox api and libraries you need for start the coding. second thing you should attention to it is you must installed 32-bit version of python in your system. 
 2. At the end, with the `python -m pip install virtualbox` command, we add the main library of virtualbox to my python language using PyPi.
 ## Add Connection

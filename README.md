@@ -33,8 +33,7 @@ YOUR_AVAILABLE_VIRTUAL_MACHINES
 SessionState(2)  # Locked state
 >>> machine.state
 MachineState(5)  # Running state
->>> height, width =
-session.console.display.get_screen_resolution()
+>>> height, width = session.console.display.get_screen_resolution()
 ```
 - **Interacting with virtual-machine**
 ```
